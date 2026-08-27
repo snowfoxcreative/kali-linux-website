@@ -1,3 +1,14 @@
+<!--
+Terminal.svelte
+
+This component emulates the terminal window on Kali Linux. It displays data as text but
+accepts input from the user in the form of common terminal commands, including:
+  - whoami
+  - ls
+  - pwd
+  - cd
+-->
+
 <script lang="ts">
   import img from "$lib/assets/utilities-terminal.png";
 
