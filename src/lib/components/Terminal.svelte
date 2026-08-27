@@ -9,17 +9,11 @@
   let topPrompt = $derived(`┌──(${username}㉿${hostname})-[${dir}]`);
   let history = $state([]);
 
-  function minimize() {
-    
-  }
+  function minimize() {}
 
-  function restore() {
+  function restore() {}
 
-  }
-
-  function close() {
-
-  }
+  function close() {}
 </script>
 
 <div class="terminal">
@@ -28,39 +22,19 @@
       <img src={img} alt="" />
       {username}@{hostname}: {dir}
       <div class="terminal-header__title-bar__window-control">
-        <button
-          aria-label="Minimize"
-          class="terminal-header__title-bar__button"
-          onclick={minimize}
+        <button aria-label="Minimize" class="terminal-header__title-bar__button" onclick={minimize}
         ></button>
-        <button
-          aria-label="Restore"
-          class="terminal-header__title-bar__button"
-          onclick={restore}
+        <button aria-label="Restore" class="terminal-header__title-bar__button" onclick={restore}
         ></button>
-        <button
-          aria-label="Close"
-          class="terminal__title-bar__button"
-          onclick={close}
-        ></button>
+        <button aria-label="Close" class="terminal__title-bar__button" onclick={close}></button>
       </div>
     </div>
     <div class="terminal-header__menu-bar">
-      <div class="terminal-header__menu-item">
-        File
-      </div>
-      <div class="terminal-header__menu-item">
-        Actions
-      </div>
-      <div class="terminal-header__menu-item">
-        Edit
-      </div>
-      <div class="terminal-header__menu-item">
-        View
-      </div>
-      <div class="terminal-header__menu-item">
-        Help
-      </div>
+      <div class="terminal-header__menu-item">File</div>
+      <div class="terminal-header__menu-item">Actions</div>
+      <div class="terminal-header__menu-item">Edit</div>
+      <div class="terminal-header__menu-item">View</div>
+      <div class="terminal-header__menu-item">Help</div>
     </div>
   </div>
   <div class="terminal-body">
