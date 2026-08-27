@@ -1,14 +1,18 @@
 <script lang="ts">
-  import favicon from "$lib/assets/favicon.svg";
+	import type { Pathname } from '$app/types';
+	import { resolve } from '$app/paths';
+	import { page } from '$app/state';
+	import { locales, localizeHref } from '$lib/paraglide/runtime';
+	import favicon from '$lib/assets/favicon.svg';
 
-  let { children } = $props();
+	let { children } = $props();
 </script>
 
-<svelte:head>
-  <link rel="icon" href={favicon} />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
-</svelte:head>
+<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+{@render children()}
 
-{@render children?.()}
+<div style="display:none">
+	{#each locales as locale (locale)}
+		<a href={resolve(localizeHref(page.url.pathname, { locale }) as Pathname)}>{locale}</a>
+	{/each}
+</div>
