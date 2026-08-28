@@ -8,8 +8,15 @@ to view the site in normal mode (like a regular site) or as a desktop GUI.
 <script lang="ts">
 </script>
 
-<div>
+<div class="container">
+  
 </div>
 
 <style>
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 </style>
