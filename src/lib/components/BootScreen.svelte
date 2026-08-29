@@ -7,6 +7,8 @@ to view the site in normal mode (like a regular site) or as a desktop GUI.
 
 <script lang="ts">
 import { resolve } from "$app/paths";
+
+// Auto-route to /desktop if user doesn't choose in a certain amount of time
 </script>
 
 <div class="container">

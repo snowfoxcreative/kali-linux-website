@@ -4,13 +4,13 @@ The default page of the website. It displays the boot screen and directs the use
 -->
 
 <script lang="ts">
-import BootScreen from "$lib/components/BootScreen.svelte";
+import DesktopGui from "$lib/components/DesktopGui.svelte";
 
 import "../app.css";
 </script>
 
 <main>
-  <BootScreen />
+  <DesktopGui />
 </main>
 
 <style>
