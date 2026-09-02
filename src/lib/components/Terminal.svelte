@@ -10,21 +10,21 @@ accepts input from the user in the form of common terminal commands, including:
 -->
 
 <script lang="ts">
-  import img from "$lib/assets/utilities-terminal.png";
+import img from "$lib/assets/utilities-terminal.svg";
 
-  const username = "zulaikha";
-  const hostname = "portfolio";
-  const bottomPrompt = "└─$ ";
+const username = "zulaikha";
+const hostname = "portfolio";
+const bottomPrompt = "└─$ ";
 
-  let dir = $state("~");
-  let topPrompt = $derived(`┌──(${username}㉿${hostname})-[${dir}]`);
-  let history = $state([]);
+let dir = $state("~");
+let topPrompt = $derived(`┌──(${username}㉿${hostname})-[${dir}]`);
+let history = $state([]);
 
-  const minimize = () => {}
+const minimize = () => {};
 
-  const restore = () => {}
+const restore = () => {};
 
-  const close = () => {}
+const close = () => {};
 </script>
 
 <div class="terminal">
