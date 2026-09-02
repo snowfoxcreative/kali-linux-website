@@ -20,11 +20,11 @@ accepts input from the user in the form of common terminal commands, including:
   let topPrompt = $derived(`┌──(${username}㉿${hostname})-[${dir}]`);
   let history = $state([]);
 
-  function minimize() {}
+  const minimize = () => {}
 
-  function restore() {}
+  const restore = () => {}
 
-  function close() {}
+  const close = () => {}
 </script>
 
 <div class="terminal">

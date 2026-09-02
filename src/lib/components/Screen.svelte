@@ -4,15 +4,31 @@ Screen.svelte
 Screen in desktop GUI
 -->
 
-<script lang="ts"></script>
+<script lang="ts">
+</script>
 
 <div class="screen">
-  <div></div>
-  <div></div>
+  <enhanced:img
+    class="screen-img"
+    src="/kali-cubism.jpg"
+    alt="Abstract dark blue and gray cubist geometric background featuring the central Kali Linux dragon logo rendered in a fractured, low-poly style."
+  />
 </div>
 
 <style>
 .screen {
   width: 100vw;
+  display: grid;
+  
+  flex: 1 0 0;
+  position: relative;
+}
+
+.screen-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
 }
 </style>
