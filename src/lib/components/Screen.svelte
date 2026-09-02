@@ -1,18 +1,18 @@
 <!-- 
-Taskbar.svelte
+Screen.svelte
 
-Taskbar in desktop GUI
+Screen in desktop GUI
 -->
 
 <script lang="ts"></script>
 
-<div class="taskbar">
+<div class="screen">
   <div></div>
   <div></div>
 </div>
 
 <style>
-.taskbar {
+.screen {
   width: 100vw;
 }
 </style>

@@ -6,6 +6,9 @@ in desktop GUI mode.
 -->
 
 <script lang="ts">
+import Screen from "./Screen.svelte";
+import Taskbar from "./Taskbar.svelte";
+
 const asciiName = "\
  _____     _       _ _    _           \
 |__  /   _| | __ _(_) | _| |__   __ _ \
@@ -17,7 +20,14 @@ const asciiName = "\
 
 </script>
 
-
+<div class="container">
+  <Taskbar />
+  <Screen />
+</div>
 
 <style>
+.container {
+  width: 100vw;
+  height: 100vh;
+}
 </style>
