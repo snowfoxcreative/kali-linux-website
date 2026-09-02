@@ -9,6 +9,7 @@ Taskbar in desktop GUI
 <div class="taskbar">
   <div></div>
   <div></div>
+  <div></div>
 </div>
 
 <style>
