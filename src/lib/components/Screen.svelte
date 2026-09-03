@@ -5,12 +5,13 @@ Screen in desktop GUI
 -->
 
 <script lang="ts">
+import screenImg from "$lib/assets/kali-cubism.jpg";
 </script>
 
 <div class="screen">
   <enhanced:img
     class="screen-img"
-    src="/kali-cubism.jpg"
+    src={screenImg}
     alt="Abstract dark blue and gray cubist geometric background featuring the central Kali Linux dragon logo rendered in a fractured, low-poly style."
   />
 </div>
@@ -19,7 +20,6 @@ Screen in desktop GUI
 .screen {
   width: 100vw;
   display: grid;
-  
   flex: 1 0 0;
   position: relative;
 }
